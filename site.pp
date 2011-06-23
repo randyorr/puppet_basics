@@ -1,10 +1,10 @@
-include nodes.pp
+import "nodes.pp"
 
 file { "/tmp/hi.txt":
 	path => '/tmp/hi.txt',
 	ensure => present,
 	owner => root, group => root, mode => 440,
-	content => 'blargh, why do this so much?'
+	content => 'blargh, why do this so much? does it still work with a node file?'
 }
 
 ssh_authorized_key { "rorr_sshkey":

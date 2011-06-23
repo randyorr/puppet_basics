@@ -2,7 +2,7 @@ file { "/tmp/hi.txt":
 	path => '/tmp/hi.txt',
 	ensure => present,
 	owner => root, group => root, mode => 440,
-	content => 'testfile, this is just a test. rorr was here!, and this is from git and remotely pushing configs!'
+	content => 'blargh, why do this so much?'
 }
 
 ssh_authorized_key { "rorr_sshkey":

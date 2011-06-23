@@ -1,3 +1,5 @@
+include nodes.pp
+
 file { "/tmp/hi.txt":
 	path => '/tmp/hi.txt',
 	ensure => present,
